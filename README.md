@@ -38,6 +38,11 @@ npm run preview
 - `lint`: run ESLint
 - `preview`: serve the production build locally
 
+## Deployment
+
+This project is configured to be served from `/ossimulator/`.
+Run `npm run build` and deploy the generated `dist/` contents to the server location mapped by Nginx.
+
 ## Project Structure
 
 ```text
