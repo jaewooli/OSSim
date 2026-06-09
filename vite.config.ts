@@ -7,4 +7,9 @@ export default defineConfig({
   server: {
     port: 5174,
   },
+  preview: {
+    host: '127.0.0.1',
+    port: 8082,
+    allowedHosts: ['ddyoru.duckdns.org'],
+  },
 });

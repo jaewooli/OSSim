@@ -9,7 +9,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint \"src/**/*.{ts,tsx}\" vite.config.ts",
     "preview": "vite preview",
-    "start": "vite preview --host 127.0.0.1 --port 8082"
+    "start": "vite preview"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^6.0.1",
