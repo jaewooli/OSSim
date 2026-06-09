@@ -31,17 +31,28 @@ npm run dev
 npm run build
 npm run lint
 npm run preview
+npm start
 ```
 
 - `dev`: start the local development server
 - `build`: type-check and create a production build
 - `lint`: run ESLint
 - `preview`: serve the production build locally
+- `start`: serve the production build on `127.0.0.1:8082`
 
 ## Deployment
 
 This project is configured to be served from `/ossimulator/`.
 Run `npm run build` and deploy the generated `dist/` contents to the server location mapped by Nginx.
+
+If Nginx is reverse proxying `/ossimulator/` to port `8082`, run the app process with:
+
+```bash
+npm ci
+npm run build
+pm2 start npm --name ossimulator -- start
+pm2 save
+```
 
 ## Project Structure
 
